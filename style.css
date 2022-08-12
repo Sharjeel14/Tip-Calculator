@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+body{
+    background-color: hsl(185, 41%, 84%);
+    font-family: 'Space Mono', monospace;
+}
+.logo{
+    position: absolute;
+    top: 60px;
+    left: 45%;
+
+}
+.main{
+    display: flex;
+    background-color: white;
+    width: 800px;
+    height: 350px;
+    border-radius: 20px;
+    padding: 20px;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding-bottom: 25px;
+}
+.calculator{
+    max-width: 400px;
+    height:320px;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-family: 'Space Mono', monospace;
+
+}
+.calculator p{
+    display: block;
+    font-size: 13px;
+    color: hsl(184, 14%, 56%);
+}
+
+.calculator label{
+    display: block;
+    font-size: 13px;
+    color: hsl(184, 14%, 56%);
+}
+.calculator input{
+    padding: 10px 50px;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: 20px;
+    color:hsl(183, 100%, 15%);
+    font-weight: bold;
+    max-width: 400px;
+    text-align: right;
+    font-family: 'Space Mono', monospace;
+}
+::-webkit-input-placeholder {
+    text-align: right;
+    font-size: 20px;
+    color:hsl(184, 14%, 56%);
+    font-weight: bold;
+  }
+.calculator input::-webkit-outer-spin-button,
+.calculator input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+  
+.calculator input:focus{
+    border: 1px solid hsl(172, 67%, 45%);
+    outline: none;
+    color:hsl(183, 100%, 15%);
+}
+
+#billTextInput{
+    background: hsl(189, 41%, 97%) url(images/icon-dollar.svg) left no-repeat;
+    background-position: 10px 15px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+#peopleInput{
+    background: hsl(189, 41%, 97%) url(images/icon-person.svg) left no-repeat;
+    background-position: 10px 15px;
+    margin-left: 10px;
+}
+#customInput{
+    text-align: center;
+    padding: 8px 10px;
+    display: inline;
+    max-width: 80px;
+    background: hsl(189, 41%, 97%);
+}
+#peoplelable{
+    margin-top: 20px;
+}
+.calculator button{
+    color: white;
+    background-color: hsl(183, 100%, 15%);
+    padding: 10px 35px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: 'Space Mono', monospace;
+    border: none;
+}
+.calculator button:hover{
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+}
+.calculation{
+    background-color: hsl(183, 100%, 15%);
+    width: 350px;
+    height:320px;
+    padding: 10px 20px;
+    margin-top: 5px;
+    border-radius: 13px;
+    padding-top: 20px;
+    padding-left: 40px;
+}
+.calculation h4
+{
+    color: hsl(189, 41%, 97%);
+}
+#tipAmount
+{
+    color: hsl(172, 67%, 45%);
+    font-size: 40px;
+    position: absolute;
+    top: 25px;
+    right: 60px;   
+}
+#tipTotalAmount{
+    color: hsl(172, 67%, 45%);
+    font-size: 40px;
+    position: absolute;
+    top: 120px;
+    right: 60px;   
+}
+.calculation p{
+    color: hsl(186, 14%, 43%);
+    font-size: 11px;  
+    margin-top: -25px; 
+}
+.calculation .heading2{
+    margin-top: 55px;
+}
+.reset{
+    width: 93%;
+    padding: 12px 20px;
+    background-color: hsl(172, 67%, 45%);
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: 'Space Mono', monospace;
+    margin-top: 90px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.reset:hover{
+    background-color: hsl(185, 41%, 84%);
+}
+#myBtn{
+    background-color: white;
+}
+
+
+/* Responsive Design For Mbile Devices */
+
+@media (min-width: 375px) and (max-width: 991px){
+    .main{
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        max-width: 375px;
+        height: 800px;
+        position: absolute;
+        top:500px;
+
+    }
+    .calculator input{
+        padding: 10px 50px;
+        max-width: 400px;
+    }
+    #billTextInput{
+        margin-left: 0px;
+    }
+    #peopleInput{
+        margin-left: 0px;
+    }
+    .calculator button{
+        padding: 10px 73px;
+    }
+    #customInput{
+        text-align: center;
+        padding: 5px 45px;
+        display: inline;
+    }
+    .calculation{
+        background-color: hsl(183, 100%, 15%);
+        width: 315px;
+        height:300px;
+        padding: 10px 20px;
+        margin-top: 110px;
+        border-radius: 13px;
+        padding-top: 20px;
+        padding-left: 40px;
+    }
+    #tipAmount
+{
+    color: hsl(172, 67%, 45%);
+    font-size: 40px;
+    position: absolute;
+    top: 480px;
+    right: 60px;   
+}
+#tipTotalAmount{
+    color: hsl(172, 67%, 45%);
+    font-size: 40px;
+    position: absolute;
+    top: 580px;
+    right: 60px;   
+}
+#peoplelable{
+    margin-top: -10px;
+}
+.reset{
+    margin-top: 80px;
+}
+}
