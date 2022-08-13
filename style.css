@@ -167,7 +167,7 @@ body{
 
 /* Responsive Design For Mbile Devices */
 
-@media (min-width: 375px) and (max-width: 991px){
+@media (max-width: 991px){
     .main{
         display: flex;
         flex-direction: column;
